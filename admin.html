@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<nav class="top-nav">
+  <h2>Admin Dashboard</h2>
+  <a href="index.html" class="logout-btn">Logout</a>
+</nav>
+
+<section class="dashboard">
+
+  <!-- Post Job -->
+  <div class="card">
+    <h3>Post New Job</h3>
+
+    <input type="text" id="jobTitle" placeholder="Job Title">
+    <textarea id="jobDesc" placeholder="Job Description"></textarea>
+
+    <button onclick="postJob()">Post Job</button>
+    <p id="postMsg" class="success-msg"></p>
+  </div>
+
+
+  <!-- Track Hours -->
+  <div class="card">
+    <h3>Track Work Hours</h3>
+
+    <input type="number" id="hoursInput" placeholder="Enter hours">
+    <button onclick="updateHours()">Update Hours</button>
+
+    <p id="hoursMsg" class="success-msg"></p>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+<footer style="position: fixed; bottom: 0; left: 0; width: 100%; text-align: center; padding: 15px; background: #e0e7ff;">
+  <p>© 2025 Work-Study System</p>
+</footer>
+</body>
+</html>

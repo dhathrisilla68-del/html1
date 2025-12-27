@@ -1,0 +1,113 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f4f7fb;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 30px;
+  background: #4a6fa5;
+  color: white;
+}
+
+.btn {
+  padding: 12px 25px;
+  background: white;
+  color: #4a6fa5;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #dbe7ff;
+}
+
+.outline {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.features, .dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.form-container {
+  max-width: 350px;
+  margin: 80px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #4a6fa5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #395c8c;
+}
+
+nav {
+  background: #4a6fa5;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+/* Footer fixed to bottom naturally*/
+footer {
+      background: #3f5f8a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+/* RESPONSIVE */
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+      }
+
+      .header-right nav {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .content {
+        padding: 30px 20px;
+      }
+    }

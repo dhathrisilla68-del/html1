@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h2>Student Dashboard</h2>
+  <a href="index.html">Logout</a>
+</nav>
+
+<section class="dashboard">
+
+  <!-- Available Jobs -->
+  <div class="card">
+    <h3>Available Jobs</h3>
+    <button onclick="toggleJobs()">View Jobs</button>
+
+    <div id="jobList" class="job-list">
+      <div class="job">
+        <p>Library Assistant</p>
+        <button onclick="applyJob('Library Assistant')">Apply</button>
+      </div>
+
+      <div class="job">
+        <p>Computer Lab Helper</p>
+        <button onclick="applyJob('Computer Lab Helper')">Apply</button>
+      </div>
+
+      <div class="job">
+        <p>Office Assistant</p>
+        <button onclick="applyJob('Office Assistant')">Apply</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Applied Jobs -->
+  <div class="card">
+    <h3>Applied Jobs</h3>
+    <ul id="appliedJobsList"></ul>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+<footer style="position: fixed; bottom: 0; left: 0; width: 100%; text-align: center; padding: 15px; background: #e0e7ff;">
+  <p>© 2025 Work-Study System</p>
+</footer>
+</body>
+</html>

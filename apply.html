@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Apply Job</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="top-nav">
+  <h2>Admin Dashboard</h2>
+  <a href="index.html" class="logout-btn">Logout</a>
+</nav>
+
+<div class="form-container">
+  <h2>Job Application</h2>
+
+  <p><strong>Job Applied:</strong> <span id="jobName"></span></p>
+
+  <input type="text" placeholder="Student Name" required>
+  <input type="text" placeholder="Roll Number" required>
+  <input type="text" placeholder="Department" required>
+
+  <button onclick="submitApplication()">Submit</button>
+</div>
+
+<script src="script.js"></script>
+<footer style="position: fixed; bottom: 0; left: 0; width: 100%; text-align: center; padding: 15px; background: #e0e7ff;">
+  <p>© 2025 Work-Study System</p>
+</footer>
+</body>
+</html>
